@@ -1,0 +1,91 @@
+body {
+  background-color: rgb(248, 248, 195);
+}
+.container {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-areas:
+    "navbar paragraph search "
+    "box1 box2 box3"
+    "box4 box5 box6"
+    "footer footer footer ";
+}
+.box {
+  background-color: rgb(248, 248, 195);
+  border: 2px solid rgb(226, 208, 102);
+}
+.navbar {
+  grid-area: navbar;
+
+  padding: 10px;
+  background-color: rgb(248, 248, 195);
+
+  position: relative;
+}
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.navbar ul li {
+  margin-right: 20px;
+}
+li a {
+  text-decoration: none;
+
+  color: black;
+  display: block;
+  justify-content: center;
+}
+.paragraph {
+  /* padding: 50% 0%; */
+  font-size: 16px;
+}
+.footer {
+  grid-area: footer;
+}
+
+.box1 {
+  grid-area: box1;
+}
+.line-one{
+    border: 1px solid rgb(189, 173, 67);
+}
+.box2 {
+  grid-area: box2;
+}
+.box2 img {
+  width: 200px;
+  height: auto;
+  object-fit: cover;
+  object-position: center 20%;
+}
+.box3 {
+  grid-area: box3;
+}
+.img-list li{
+  float: left;
+  list-style: none;
+  margin: auto;
+  padding: 5% ;
+
+}
+.img-list img{
+  width: 30px;
+  height: auto;
+}
+.skill-list li{
+    
+    list-style: none ;
+}
+.box4 {
+  grid-area: box4;
+}
+.box5 {
+  grid-area: box5;
+}
+.box6 {
+  grid-area: box6;
+}
+

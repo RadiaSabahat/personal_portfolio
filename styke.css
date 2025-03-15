@@ -1,5 +1,6 @@
 body {
   background-color: rgb(248, 248, 195);
+  font-family: cursive;
 }
 .container {
   display: grid;
@@ -10,13 +11,19 @@ body {
     "box1 box2 box3"
     "box4 box5 box6"
     "footer footer footer ";
-    margin: 20px;
+  
+    margin-left: 40px;
+    margin-right: 50px;
     place-items: center;
 }
 .box {
   background-color: rgb(248, 248, 195);
-  border: 2px solid rgb(226, 208, 102);
+  /* border: 2px solid rgb(226, 208, 102); */
+ 
+  text-align: center; 
+  padding: 30px;
 }
+
 .navbar {
   grid-area: navbar;
 
@@ -46,6 +53,9 @@ li a {
   /* padding: 50% 0%; */
   font-size: 16px;
 }
+p{
+  /* white-space: pre-wrap; */
+}
 .footer {
   grid-area: footer;
 }
@@ -64,13 +74,15 @@ li a {
   color: aliceblue;
   padding: 8px;
   cursor: pointer;
+  width: 50%;
+  display: inline-block;
 }
 .box2 {
   grid-area: box2;
 }
 .box2 img {
-  width: 200px;
-  height: auto;
+    width: 200px;
+    height: auto;
   object-fit: cover;
   object-position: center 20%;
 }
